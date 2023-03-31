@@ -27,7 +27,7 @@
     <link href="{{ asset('vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="{{ asset('build/css/custom.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('builds/css/custom.min.css') }}" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -289,11 +289,11 @@
     <script src="{{ asset('vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js') }}"></script>
     <script src="{{ asset('vendors/datatables.net-scroller/js/dataTables.scroller.min.js') }}"></script>
     <script src="{{ asset('vendors/jszip/dist/jszip.min.js') }}"></script>
-    <script src="{{ asset('vendors/pdfmake/build/pdfmake.min.js') }}"></script>
-    <script src="{{ asset('vendors/pdfmake/build/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('vendors/pdfmake/builds/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('vendors/pdfmake/builds/vfs_fonts.js') }}"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="{{ asset('builds/js/custom.min.js') }}"></script>
 
 </body>
 </html>
