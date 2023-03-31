@@ -60,60 +60,105 @@
                         <th>
                             Status
                         </th>
+                        <th>
+                            Actions
+                        </th>
                         </tr>
                     </thead>
 
 
                     <tbody>
                         <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
-                            <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
-                                <option value="1">active</option>
-                                <option value="0">unactive</option>
-                            </select>
-                        </td>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>
+                                <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
+                                    <option value="1">active</option>
+                                    <option value="0">unactive</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger m-b-10 m-l-5" name="delete">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <a href="">
+                                    <button type="button"  class="btn btn-info m-b-10 m-l-5" name="update">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Garrett Winters</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>63</td>
-                        <td>2011/07/25</td>
-                        <td>
-                            <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
-                                <option value="1">active</option>
-                                <option value="0">unactive</option>
-                            </select>
-                        </td>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>
+                                <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
+                                    <option value="1">active</option>
+                                    <option value="0">unactive</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger m-b-10 m-l-5" name="delete">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <a href="">
+                                    <button type="button"  class="btn btn-info m-b-10 m-l-5" name="update">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Ashton Cox</td>
-                        <td>Junior Technical Author</td>
-                        <td>San Francisco</td>
-                        <td>66</td>
-                        <td>2009/01/12</td>
-                        <td>$86,000</td>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>
+                                <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
+                                    <option value="1">active</option>
+                                    <option value="0">unactive</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger m-b-10 m-l-5" name="delete">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <a href="">
+                                    <button type="button"  class="btn btn-info m-b-10 m-l-5" name="update">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Cedric Kelly</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
-                        <td>2012/03/29</td>
-                        <td>$433,060</td>
-                        </tr>
-                        <tr>
-                        <td>Airi Satou</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>33</td>
-                        <td>2008/11/28</td>
-                        <td>$162,700</td>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>
+                                <select name="val-status" style="width:100%;"class=" btn btn-primary" maxlength="30">
+                                    <option value="1">active</option>
+                                    <option value="0">unactive</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger m-b-10 m-l-5" name="delete">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <a href="">
+                                    <button type="button"  class="btn btn-info m-b-10 m-l-5" name="update">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                     </table>
