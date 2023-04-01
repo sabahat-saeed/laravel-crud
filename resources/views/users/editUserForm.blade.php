@@ -92,4 +92,9 @@
         </div>
         </div>
     <!-- /page content -->
+<script>
+    const dateInput = document.querySelector('#birthday');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('max', today);
+</script>
 @endsection

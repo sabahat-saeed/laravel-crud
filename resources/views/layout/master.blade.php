@@ -48,7 +48,7 @@
               <div class="menu_section">
                 <h3>User Management</h3>
                     <ul class="nav side-menu">
-                        <li><a href="{{url('/')}}"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="{{url('/')}}"><i class="fa fa-home"></i> Users List</a></li>
                         <li><a href="{{url('add-users')}}"><i class="fa fa-plus-square"></i> Add User</a></li>
                         <li><a href="{{url('login')}}"><i class="fa fa-lock"></i> Login</a></li>
                   </ul>
@@ -106,8 +106,61 @@
     <script src="{{ asset('vendors/pdfmake/builds/pdfmake.min.js') }}"></script>
     <script src="{{ asset('vendors/pdfmake/builds/vfs_fonts.js') }}"></script>
 
+
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('builds/js/custom.min.js') }}"></script>
+    @if(Request::url() == 'http://127.0.0.1:8080/add-users' || Request::url() == 'http://127.0.0.1:8080/edit-users')
+        <script>
+
+                //Add user to prevent double addition
+                const form = document.querySelector('form');
+                const submitButton = form.querySelector('button[type="submit"]');
+
+                form.addEventListener('submit', (event) => {
+                    alert("add-user");
+                // Prevent the form from submitting normally
+                event.preventDefault();
+
+                // Disable the submit button to prevent double submission
+                submitButton.disabled = true;
+
+                // Submit the form
+                form.submit();
+                });
+            </script>
+        @else
+            <script>
+                //delete button to prevent double deletion
+                const deleteButton = document.querySelector('#delete-user');
+                deleteButton.addEventListener('click', () => {
+                alert("delete-user");
+                // Disable the delete button to prevent double deletion
+                deleteButton.disabled = true;
+
+                // Send the delete request
+                fetch('/delete-user', { method: 'DELETE' })
+                    .then(response => {
+                    // Re-enable the delete button once the delete operation has completed
+                    deleteButton.disabled = false;
+
+                    // Handle the response
+                    if (response.ok) {
+                        // User was successfully deleted
+                        console.log("User was successfully deleted");
+                    } else {
+                        // Error occurred while deleting the user
+                        console.log("Error occurred while deleting the user");
+                    }
+                    })
+                    .catch(error => {
+                    // Re-enable the delete button on error
+                    deleteButton.disabled = false;
+                    console.log("Re-enable the delete button on error");
+                    // Handle the error
+                    });
+                });
+            </script>
+        @endif
 
 </body>
 </html>

@@ -15,7 +15,7 @@
             <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
                 <div class="x_title">
-                    <h2>Users <small>List</small></h2>
+                    <h2>Manage Users</h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -45,6 +45,9 @@
 
                     <tbody>
                         <tr>
+                            <form action="{{url('delete-user')}}" role="form" method="delete">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="id" value="1">
                             <td>Garrett Winters</td>
                             <td>Accountant</td>
                             <td>Tokyo</td>
@@ -63,7 +66,37 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="submit"  class="btn btn-danger btn-sm" name="delete">
+                                <button type="submit"  class="btn btn-danger btn-sm" name="delete" id="delete-user">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                                <a href="{{url('edit-users')}}">
+                                    <button type="button"  class="btn btn-info btn-sm" name="update">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                </a>
+                            </td>
+                        </form>
+                        </tr>
+                        <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Active
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Active</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">unactive</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button type="submit"  class="btn btn-danger btn-sm" name="delete" id="delete-user">
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <a href="{{url('edit-users')}}">
@@ -92,36 +125,7 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="submit"  class="btn btn-danger btn-sm" name="delete">
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                                <a href="{{url('edit-users')}}">
-                                    <button type="button"  class="btn btn-info btn-sm" name="update">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>63</td>
-                            <td>2011/07/25</td>
-                            <td>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Active</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">unactive</a>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <button type="submit"  class="btn btn-danger btn-sm" name="delete">
+                                <button type="submit" class="btn btn-danger btn-sm" name="delete" id="delete-user">
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <a href="{{url('edit-users')}}">

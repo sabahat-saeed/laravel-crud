@@ -25,3 +25,4 @@ Route::get('edit-users', function () {
 Route::get('login', function () {
     return view('auth/login');
 });
+
