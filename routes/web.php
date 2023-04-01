@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home/home');
+    return view('users/usersList');
+});
+Route::get('add-users', function () {
+    return view('users/addUserForm');
+});
+Route::get('edit-users', function () {
+    return view('users/editUserForm');
+});
+Route::get('login', function () {
+    return view('auth/login');
 });
